@@ -6,46 +6,59 @@
     <title>Assignment</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div
-      class="w-[500px] h-[500px] bg-gray-200 flex item-centre justify-center ml-[450px] mt-[150px]"
-    >
+  <body class="bg-gradient-to-r from-blue-50 to-purple-100 min-h-screen flex items-center justify-center">
+    <div class="w-[700px] h-[700px] bg-white rounded-2xl shadow-2xl flex items-center justify-center">
       <form onsubmit="signUp(event)">
-        <h1
-          class="text-2xl font-medium flex item-centre justify-center p-[60px]"
-        >
+        <h1 class="text-3xl font-bold text-gray-700 flex items-center justify-center pb-[60px]">
           Sign Up Page
         </h1>
+        
         <div class="flex-col item-centre p-[10px]">
-          <div class="flex items-center justify-center gap-10 mb-[30px]">
-            <label>Email</label>
+          <div class="flex item-center justify-center gap-2 mb-[30px]">
+            <label class="text-gray-700 font-medium text-lg tracking-wide">First Name</label>
             <input
-              id="emailInput"
-              class="border-[2px]"
-              type="email"
-              placeholder="   Enter your Email"
+              class="border-2 border-gray-300 rounded-lg px-5 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              type="text"
+              placeholder="Enter your First Name"
               required
             />
           </div>
-          <div class="flex items-center justify-center gap-3">
-            <label>Password</label>
+          <div class="flex item-center justify-center gap-2 mb-[30px]">
+            <label class="text-gray-700 font-medium text-lg tracking-wide">Last Name</label>
+            <input
+              class="border-2 border-gray-300 rounded-lg px-5 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              type="text"
+              placeholder="Enter your Last Name"
+              required
+            />
+          </div>
+          <div class="flex item-center justify-center gap-12 mb-[30px]">
+            <label class="text-gray-700 font-medium text-lg tracking-wide">Email</label>
+            <input
+              id="emailInput"
+              class="border-2 border-gray-300 rounded-lg px-5 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              type="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="flex item-center justify-center gap-4">
+            <label class="text-gray-700 font-medium text-lg tracking-wide">Password</label>
             <input
               id="passwordInput"
-              class="border-[2px]"
+              class="border-2 border-gray-300 rounded-lg px-5 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
               type="password"
-              placeholder="   Enter your Password"
+              placeholder="Enter your Password"
               required
             />
           </div>
         </div>
         <div>
-          <p id="result"></p>
-        </div>
+          <p id="result" class="text-center text-xl font-medium text-red-500 mt-4"></p>        </div>
         <div>
           <button
             type="submit"
-            class="bg-white flex item-centre justify-center ml-[110px] mt-[20px] w-[100px] h-[30px]"
-          >
+            class="bg-blue-400 text-white font-semibold rounded-lg ml-[110px] mt-[20px] w-[120px] h-[35px] hover:bg-blue-500 hover:shadow-md transition duration-300">
             Sign Up
           </button>
         </div>
